@@ -13,3 +13,5 @@ data/
 *.pem
 *.key
 .ipynb_checkpoints/
+*.py[cod]
+.ruff_cache/

@@ -1,11 +1,7 @@
-numpy>=1.24
-pandas>=2.0
-matplotlib>=3.7
-seaborn>=0.13
-transformers>=4.36
-torch>=2.1
-datasets>=2.16
-yfinance>=0.2.40
-scipy>=1.11
-pytest>=7.4
-huggingface_hub>=0.20
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.5.5
+pandas==3.1.1
+matplotlib==3.11.2
+seaborn==0.13.2
+transformers==5.24.1
+torch==2.15.0+cpu

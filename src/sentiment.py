@@ -24,6 +24,7 @@ def _load_finbert():
 
 
 def finbert_sentiment(texts: list[str], batch_size: int = 32) -> pd.DataFrame:
+    """Return FinBERT labels and probabilities, loading public weights on demand."""
     model, tokenizer = _load_finbert()
     label_map = {0: "positive", 1: "negative", 2: "neutral"}
 
@@ -108,6 +109,7 @@ LM_NEGATIVE = {
 
 
 def keyword_sentiment(texts: list[str]) -> pd.DataFrame:
+    """Classify texts using the included small positive and negative word sets."""
     results = []
     for text in texts:
         words = set(text.lower().split())
