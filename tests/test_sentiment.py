@@ -1,4 +1,5 @@
 """Tests for the sentiment analysis module."""
+
 from __future__ import annotations
 
 from src.sentiment import finbert_sentiment, keyword_sentiment
